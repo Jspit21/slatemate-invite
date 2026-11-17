@@ -1,0 +1,230 @@
+/* Slate Mate invite pages. Same look as the policy site (slatemate-legal).
+   Dependency-free: no fonts, scripts, or assets load from a third-party
+   host, so viewing these pages sets no cookies. */
+
+:root {
+  --bg: #fbf8f3;
+  --surface: #ffffff;
+  --border: #e5ded2;
+  --text: #1c1917;
+  --text-muted: #6b6257;
+  --accent: #8c2f39;
+  --note-bg: #fdf3f3;
+  --note-border: #e8c9cc;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #14110f;
+    --surface: #1c1917;
+    --border: #35302b;
+    --text: #f5f1ea;
+    --text-muted: #a89d90;
+    --accent: #e9bc5c;
+    --note-bg: #241f18;
+    --note-border: #4a3d28;
+  }
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0 20px 96px;
+  background: var(--bg);
+  color: var(--text);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
+    Arial, sans-serif;
+  font-size: 17px;
+  line-height: 1.65;
+  -webkit-text-size-adjust: 100%;
+}
+
+.wrap {
+  max-width: 720px;
+  margin: 0 auto;
+}
+
+header.site {
+  padding: 40px 0 8px;
+  border-bottom: 1px solid var(--border);
+  margin-bottom: 32px;
+}
+
+header.site a.brand {
+  font-size: 15px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--accent);
+  text-decoration: none;
+}
+
+nav.site {
+  margin-top: 12px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 18px;
+  padding-bottom: 12px;
+}
+
+nav.site a {
+  font-size: 15px;
+  color: var(--text-muted);
+  text-decoration: none;
+}
+
+nav.site a:hover,
+nav.site a[aria-current="page"] {
+  color: var(--text);
+  text-decoration: underline;
+}
+
+h1 {
+  font-size: 34px;
+  line-height: 1.2;
+  margin: 0 0 8px;
+  letter-spacing: -0.02em;
+}
+
+h2 {
+  font-size: 22px;
+  line-height: 1.3;
+  margin: 44px 0 12px;
+  letter-spacing: -0.01em;
+}
+
+h3 {
+  font-size: 18px;
+  margin: 28px 0 8px;
+}
+
+p,
+ul,
+ol {
+  margin: 0 0 16px;
+}
+
+ul,
+ol {
+  padding-left: 24px;
+}
+
+li {
+  margin-bottom: 8px;
+}
+
+a {
+  color: var(--accent);
+}
+
+.updated {
+  color: var(--text-muted);
+  font-size: 15px;
+  margin-bottom: 32px;
+}
+
+.lede {
+  font-size: 19px;
+  color: var(--text-muted);
+}
+
+.note {
+  background: var(--note-bg);
+  border: 1px solid var(--note-border);
+  border-radius: 10px;
+  padding: 16px 20px;
+  margin: 0 0 24px;
+  font-size: 16px;
+}
+
+.note p:last-child {
+  margin-bottom: 0;
+}
+
+/* Marks a value the developer must replace before publishing. */
+.todo {
+  background: #ffe08a;
+  color: #4a3200;
+  padding: 1px 6px;
+  border-radius: 4px;
+  font-weight: 600;
+  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+  font-size: 0.9em;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 0 0 24px;
+  font-size: 16px;
+  display: block;
+  overflow-x: auto;
+}
+
+th,
+td {
+  text-align: left;
+  vertical-align: top;
+  padding: 10px 14px 10px 0;
+  border-bottom: 1px solid var(--border);
+}
+
+th {
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+footer.site {
+  margin-top: 64px;
+  padding-top: 24px;
+  border-top: 1px solid var(--border);
+  color: var(--text-muted);
+  font-size: 15px;
+}
+
+.card-grid {
+  display: grid;
+  gap: 16px;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  margin-bottom: 32px;
+}
+
+.card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 20px;
+}
+
+.card h3 {
+  margin-top: 0;
+}
+
+.card p {
+  color: var(--text-muted);
+  font-size: 16px;
+  margin-bottom: 0;
+}
+
+/* Invite landing pages (join-group.html, add-friend.html). */
+a.button {
+  display: inline-block;
+  margin: 8px 0;
+  padding: 14px 28px;
+  border-radius: 12px;
+  background: var(--accent);
+  color: var(--bg);
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.code {
+  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+  font-size: 22px;
+  letter-spacing: 0.08em;
+  user-select: all;
+  -webkit-user-select: all;
+}

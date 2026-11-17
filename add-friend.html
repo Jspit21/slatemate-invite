@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="robots" content="noindex" />
+    <title>Add a friend — Slate Mate</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="wrap">
+      <header class="site">
+        <a class="brand" href="https://jspit21.github.io/slatemate-legal/index.html">Slate Mate</a>
+      </header>
+
+      <h1>You&rsquo;ve got a friend invite</h1>
+      <p class="lede">Someone wants to swap movie ratings with you on Slate Mate.</p>
+
+      <div id="invite" data-path="add-friend" hidden>
+        <p><a id="open" class="button" href="#">Open in Slate Mate</a></p>
+
+        <h2>Don&rsquo;t have the app yet?</h2>
+        <p>
+          <a href="https://apps.apple.com/app/id6800539140">Get Slate Mate on the App Store</a>,
+          create your account, then come back and tap the button above.
+        </p>
+
+        <h2>Button not working?</h2>
+        <p>In the app, open Your Stats &rarr; Friends and enter this friend code:</p>
+        <p class="code" id="code"></p>
+      </div>
+
+      <div id="missing" class="note">
+        <p>This link is missing its friend code. Ask whoever sent it to share their invite again.</p>
+      </div>
+
+      <footer class="site">
+        <p>
+          <a href="https://jspit21.github.io/slatemate-legal/index.html">Home</a> &middot;
+          <a href="https://jspit21.github.io/slatemate-legal/privacy.html">Privacy Policy</a> &middot;
+          <a href="https://jspit21.github.io/slatemate-legal/support.html">Support</a>
+        </p>
+      </footer>
+    </div>
+    <script src="invite.js"></script>
+  </body>
+</html>
